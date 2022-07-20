@@ -53,7 +53,7 @@ Feature: Send message
 
 
 
-    
+
   @LUE-1043
   Scenario: 01-02: The message delivery should be to 'All employees' by default and should be changeable.
     # And user writes a message title "test" on the Topic field
