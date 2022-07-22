@@ -266,7 +266,7 @@ public class MessageStep {
 
     @Then("MESSAGE field should be hided")
     public void message_field_should_be_hided() {
-
+        System.out.println("Message text box is displayed = " + dashboardMessage.cancelButton.isDisplayed());
     }
 
 
