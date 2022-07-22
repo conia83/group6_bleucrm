@@ -34,6 +34,8 @@ public class DashboardMessage {
     public WebElement sendButton;
 
 
+    @FindBy(xpath = "/html/body/table/tbody/tr[2]/td/table/tbody/tr[1]/td[2]/table/tbody/tr/td/div/div[2]/div/div[3]/div[2]/div[1]/div/div[1]/div[3]/div[1]/div")
+    public WebElement createdMessage;
 
 
     @FindBy(xpath = "//span[@class='feed-add-info-text']")
