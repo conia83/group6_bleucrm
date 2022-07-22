@@ -57,6 +57,7 @@ public class MessageStep {
     @And("user writes a message {string} on the message text field")
     public void user_writes_a_message_on_the_message_text_field(String text) {
 
+        text = ConfigurationReader.getProperty("message");
         Driver.getDriver().switchTo().frame(dashboardMessage.iframe);
         //BrowserUtils.waitForVisibility(dashboardMessage.iframeMessage,3);
 
@@ -76,6 +77,13 @@ public class MessageStep {
     @Then("user should see the created Message on the dashboard")
     public void user_should_see_the_created_message_on_the_dashboard() {
 
+        String eMessage = ConfigurationReader.getProperty("message");
+        String aMessage = dashboardMessage.createdMessage.getText();
+
+        System.out.println("eMessage = " + eMessage);
+        System.out.println("aMessage = " + aMessage);
+
+        Assert.assertEquals(eMessage,aMessage);
     }
 
 
@@ -258,7 +266,7 @@ public class MessageStep {
 
     @Then("MESSAGE field should be hided")
     public void message_field_should_be_hided() {
-
+        System.out.println("Message text box is displayed = " + dashboardMessage.cancelButton.isDisplayed());
     }
 
 
