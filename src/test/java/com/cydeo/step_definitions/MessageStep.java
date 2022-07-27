@@ -5,6 +5,7 @@ import com.cydeo.pages.LoginPage;
 import com.cydeo.utilities.BrowserUtils;
 import com.cydeo.utilities.ConfigurationReader;
 import com.cydeo.utilities.Driver;
+import io.cucumber.java.bs.A;
 import io.cucumber.java.en.And;
 import io.cucumber.java.en.Given;
 import io.cucumber.java.en.Then;
@@ -58,6 +59,7 @@ public class MessageStep {
     public void user_writes_a_message_on_the_message_text_field(String text) {
 
         text = ConfigurationReader.getProperty("message");
+
         Driver.getDriver().switchTo().frame(dashboardMessage.iframe);
         //BrowserUtils.waitForVisibility(dashboardMessage.iframeMessage,3);
 
@@ -121,6 +123,7 @@ public class MessageStep {
         BrowserUtils.sleep(1);
 
         System.out.println("expected = " + expected);
+
         String actual = dashboardMessage.toAllEmployees.getText();
 
         System.out.println("actual = " + actual);
@@ -195,6 +198,8 @@ public class MessageStep {
     @And("user clicks a person {string}")
     public void user_clicks_a_person(String person) {
 
+        person = dashboardMessage.email1;
+
         for (WebElement each : dashboardMessage.recentPerson) {
 
             if(each.getText().equals(person)){
@@ -215,6 +220,8 @@ public class MessageStep {
     @And("user clicks a person {string} from the people list")
     public void user_clicks_a_person_from_the_people_list(String person) {
 
+        person = dashboardMessage.email2;
+
         for (WebElement each : dashboardMessage.employeesAndDepartments) {
 
             if(each.getText().equals(person)){
@@ -228,11 +235,14 @@ public class MessageStep {
     public void user_clicks_the_e_mail_users_tap() {
 
         dashboardMessage.emailUsers.click();
-        BrowserUtils.sleep(1);
+       // BrowserUtils.sleep(1);
     }
 
     @And("user texts a email {string}")
     public void user_texts_a_email(String person) {
+
+        person = dashboardMessage.email3;
+
         dashboardMessage.emailInput.sendKeys(person);
         BrowserUtils.sleep(1);
     }
@@ -240,13 +250,26 @@ public class MessageStep {
     @And("user clicks the person {string} from the people list")
     public void user_clicks_the_person_from_the_people_list(String string) {
         dashboardMessage.email.click();
-        BrowserUtils.sleep(1);
+        //BrowserUtils.sleep(1);
     }
 
     @Then("user should see the recipients has changed")
     public void user_should_see_the_message_that_the_recipients_has_changed() {
 
 
+        for (WebElement each : dashboardMessage.changedEmployees) {
+
+
+            if (each.getText().equals(dashboardMessage.email1)){
+                Assert.assertTrue(each.getText().equals(dashboardMessage.email1));
+            }else if (each.getText().equals(dashboardMessage.email2)) {
+                Assert.assertTrue(each.getText().equals(dashboardMessage.email2));
+            }else if (each.getText().equals(dashboardMessage.email3)) {
+                Assert.assertTrue(each.getText().equals(dashboardMessage.email3));
+            }
+//
+//
+        }
     }
 
 

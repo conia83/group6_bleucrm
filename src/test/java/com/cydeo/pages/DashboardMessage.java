@@ -59,9 +59,16 @@ public class DashboardMessage {
 
 
 
-    @FindBy(xpath = "/html/body/table/tbody/tr[2]/td/table/tbody/tr[1]/td[2]/table/tbody/tr/td/div/div[2]/div/div[3]/div[2]/div[1]/div/div[1]/div[2]/span/span[2]")
+    @FindBy(xpath = "//*[@class='feed-add-post-destination-new']")
     public WebElement toAllEmployees;
 
+    @FindBy(xpath = "//*[@class='feed-add-post-destination-new']")
+    public List<WebElement> changedEmployees;
+
+
+    public String email1 = "helpdesk1@cybertekschool.com";
+    public String email2 = "hr76@cybertekschool.com";
+    public String email3 = "helpdesk22@cybertekschool.com";
 
 
 
@@ -70,6 +77,8 @@ public class DashboardMessage {
 
     @FindBy(xpath = "//div[@class='bx-finder-box-item-t7-info']" )
     public List<WebElement> recentPerson;
+
+
 
     @FindBy(linkText = "Employees and departments")
     public WebElement employeesAndDepartmentsTab;
