@@ -18,7 +18,7 @@ Feature: Upload functionality
     And user clicks the send button
     Then all of the uploaded files are seen on the Active Stream
 
-  @LUE-unnamed
+  @LUE-1073
   Scenario: User should be able to upload multiple files at the same time.
     When user clicks on the upload files button
     And user sends 3 files at the same time to Upload files and images section
