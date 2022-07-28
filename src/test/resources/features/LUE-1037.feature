@@ -25,5 +25,16 @@ Feature: Upload functionality
     And user clicks the send button
     Then all of the uploaded files are seen on the Active Stream
 
+  @LUE-1074
+  Scenario: User should be able to upload pictures.
+    When user clicks on the upload files button
+    And user sends a JPG file to Upload files and images section
+    And user clicks the send button
+    Then all of the uploaded files are seen on the Active Stream
 
-
+  @LUE-1075
+  Scenario: User should be able to display the uploaded picture itself in Activity Stream.
+    When user clicks on the upload files button
+    And user sends a JPG file to Upload files and images section
+    And user clicks the send button
+    Then all of the uploaded files are seen on the Active Stream
