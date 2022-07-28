@@ -1,9 +1,12 @@
 package com.cydeo.pages;
 
 import com.cydeo.utilities.Driver;
+import org.apache.commons.compress.archivers.zip.X000A_NTFS;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
+
+import java.util.List;
 
 public class AssignTask_pages {
 
@@ -29,7 +32,7 @@ public class AssignTask_pages {
     @FindBy(name= "ACTION[0][ARGUMENTS][data][TITLE]")
     public WebElement thingsToDo;
 
-    @FindBy(xpath = "(//div[@class='bx-finder-box-item-t7-name'])[1]")
+    @FindBy(xpath = "//a[contains(@id,'U512')]")
     public WebElement recipient;
 
     @FindBy(xpath = "//span[@class='popup-window-close-icon']")
@@ -41,8 +44,44 @@ public class AssignTask_pages {
     @FindBy(xpath = "//a[@class=\"task-title task-status-text-color-accepted\"]")
     public WebElement verifyTask1;
 
-    @FindBy(xpath = "//iframe[starts-with(@id,'iframe')]")
+    @FindBy(xpath="//iframe[starts-with(@id,'iframe')]")
     public WebElement Iframe;
+
+    @FindBy(xpath = "//a[@href=\"/company/personal/user/693/tasks/?F_CANCEL=Y&F_STATE=sRg00&clear_filter=Y\"]")
+    public WebElement SetByMe;
+
+    @FindBy(xpath = "//a[starts-with(@id,'destDepartmentTab')]")
+    public WebElement EmployeesAndDepartment;
+
+    @FindBy(xpath = "//a[@href=\"#U790\"]")
+    public WebElement recipientInEaD;
+
+    @FindBy(xpath = "//span[@class=\"popup-window-close-icon\"]")
+    public WebElement EaDcloseButton;
+
+    @FindBy(id = "destEmailTab_-740733135")
+    public WebElement EmailUsersbutton;
+
+    @FindBy(xpath = "(//a[@rel=\"U790\"])[2]")
+    public WebElement SecondEmail;
+
+
+    @FindBy(xpath = "//table[@id=\"TASKS_GRID_ROLE_ID_4096_0_ADVANCED_N_table\"]/tbody/tr[1]/td[3]//a")
+    public WebElement WebTable;
+
+    @FindBy(xpath = "//iframe[starts-with(@id,'iframe')]")
+    public WebElement IframeWebtable;
+
+    @FindBy(xpath = "//table[@id='task-list-table']//tbody/tr[1]/td[5]")
+    public WebElement emailInIframe1;
+
+    @FindBy(xpath = "//table[@id='task-list-table']//tbody/tr[2]/td[5]")
+    public WebElement emailInIframe2;
+
+    @FindBy(xpath = "//table[@class='main-grid-panel-table']//tr/td[2]//span[2]")
+    public WebElement count1;
+
+
 
 
 }
