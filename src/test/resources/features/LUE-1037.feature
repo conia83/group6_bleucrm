@@ -38,3 +38,10 @@ Feature: Upload functionality
     And user sends a JPG file to Upload files and images section
     And user clicks the send button
     Then all of the uploaded files are seen on the Active Stream
+
+  @LUE-1076 @bug
+  Scenario:  User should be able to insert the files and images into the text.
+    When user inserts a PDF file to text section
+    And user inserts a image to text section
+    And user clicks the send button
+    Then  all of the uploaded files are seen on the Active Stream

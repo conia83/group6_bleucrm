@@ -5,9 +5,9 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 
-public class LUE1071AndLUE1073_Page {
+public class LUE1071ToLUE1075_Page {
 
-   public LUE1071AndLUE1073_Page() {
+   public LUE1071ToLUE1075_Page() {
       PageFactory.initElements(Driver.getDriver(), this);
    }
 

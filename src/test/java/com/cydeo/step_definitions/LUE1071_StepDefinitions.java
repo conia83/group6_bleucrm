@@ -1,6 +1,6 @@
 package com.cydeo.step_definitions;
 
-import com.cydeo.pages.LUE1071AndLUE1073_Page;
+import com.cydeo.pages.LUE1071ToLUE1075_Page;
 import com.cydeo.utilities.BrowserUtils;
 import com.cydeo.utilities.Driver;
 import io.cucumber.java.en.And;
@@ -19,7 +19,7 @@ public class LUE1071_StepDefinitions {
    String pdfFilePath = "C:\\Users\\sonic\\Desktop\\Test Files\\Test PDF.pdf";
    String txtFilePath = "C:\\Users\\sonic\\Desktop\\Test Files\\Test TXT.txt";
 
-   LUE1071AndLUE1073_Page uploadingDifferentFormatsPage = new LUE1071AndLUE1073_Page();
+   LUE1071ToLUE1075_Page uploadingDifferentFormatsPage = new LUE1071ToLUE1075_Page();
 
    @When("user clicks on the upload files button")
    public void user_clicks_on_the_upload_files_button() {
