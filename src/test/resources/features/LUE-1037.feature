@@ -59,3 +59,11 @@ Feature: Upload functionality
     And user sends a JPG file to Upload files and images section
     And user removes uploaded files and images
     Then removed files and images are not seen
+
+  @LUE-1080
+  Scenario: User should be able to rename the file before sending it.
+    When user clicks on the upload files button
+    And user sends a PDF file to Upload files and images section
+    And user clicks the small pencil button right of the uploaded file name
+    And user enters a custom name for the file
+    Then uploaded file's name is changed
