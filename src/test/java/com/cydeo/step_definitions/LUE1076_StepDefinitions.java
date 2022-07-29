@@ -2,6 +2,7 @@ package com.cydeo.step_definitions;
 
 import com.cydeo.pages.LUE1076_Page;
 import com.cydeo.utilities.BrowserUtils;
+import io.cucumber.java.en.Then;
 import io.cucumber.java.en.When;
 
 public class LUE1076_StepDefinitions {
@@ -24,6 +25,5 @@ public class LUE1076_StepDefinitions {
       lue1076Page.textSection.sendKeys(jpgFilePath);
       BrowserUtils.sleep(3);
    }
-
 
 }

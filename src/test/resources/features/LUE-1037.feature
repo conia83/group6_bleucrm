@@ -45,3 +45,17 @@ Feature: Upload functionality
     And user inserts a image to text section
     And user clicks the send button
     Then  all of the uploaded files are seen on the Active Stream
+
+  @LUE-1078
+  Scenario: User should be able to allow a recipient to edit documents.
+    When user clicks on the upload files button
+    And user sends a DOC file to Upload files and images section
+    Then Allow a recipient to edit documents? checkbox is selected
+
+    @LUE-1079
+    Scenario: User should be able to remove files and images at any time before sending.
+      When user clicks on the upload files button
+      And user sends a DOC file to Upload files and images section
+      And user sends a JPG file to Upload files and images section
+      And user removes uploaded files and images
+      Then removed files and images are not seen
