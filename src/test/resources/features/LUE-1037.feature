@@ -52,10 +52,10 @@ Feature: Upload functionality
     And user sends a DOC file to Upload files and images section
     Then Allow a recipient to edit documents? checkbox is selected
 
-    @LUE-1079
-    Scenario: User should be able to remove files and images at any time before sending.
-      When user clicks on the upload files button
-      And user sends a DOC file to Upload files and images section
-      And user sends a JPG file to Upload files and images section
-      And user removes uploaded files and images
-      Then removed files and images are not seen
+  @LUE-1079
+  Scenario: User should be able to remove files and images at any time before sending.
+    When user clicks on the upload files button
+    And user sends a DOC file to Upload files and images section
+    And user sends a JPG file to Upload files and images section
+    And user removes uploaded files and images
+    Then removed files and images are not seen
