@@ -51,9 +51,6 @@ Feature: Send message
     Then user should see the error message "Please specify at least one person."
 
 
-
-
-
   @LUE-1043
   Scenario: 01-02: The message delivery should be to 'All employees' by default and should be changeable.
     # And user writes a message title "test" on the Topic field

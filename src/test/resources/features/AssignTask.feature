@@ -5,7 +5,6 @@ Feature: Task assignment function
   Background:
   Given User is on the Tasks section in the azulcrm home page
 
-
 Scenario: Assigning tasks
   When user types a task name on the Things to do section
   And user clicks on Add more button of Responsible person section

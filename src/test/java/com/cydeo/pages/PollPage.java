@@ -93,4 +93,5 @@ public class PollPage {
 
     @FindBy(xpath = "//button[@class='ui-btn ui-btn-lg ui-btn-primary']")
     public  WebElement vote;
+
 }

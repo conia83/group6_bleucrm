@@ -25,7 +25,7 @@ Feature: Upload functionality
     And user clicks the send button
     Then all of the uploaded files are seen on the Active Stream
 
-  @LUE-1074 @smoke
+  @LUE-1074
   Scenario: User should be able to upload pictures.
     When user clicks on the upload files button
     And user sends a JPG file to Upload files and images section
@@ -46,7 +46,7 @@ Feature: Upload functionality
     And user clicks the send button
     Then  all of the uploaded files are seen on the Active Stream
 
-  @LUE-1078  @smoke
+  @LUE-1078
   Scenario: User should be able to allow a recipient to edit documents.
     When user clicks on the upload files button
     And user sends a DOC file to Upload files and images section

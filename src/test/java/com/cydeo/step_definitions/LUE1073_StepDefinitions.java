@@ -18,6 +18,7 @@ public class LUE1073_StepDefinitions {
       lue1071Page.uploadFilesSection.sendKeys(pdfFilePath);
       lue1071Page.uploadFilesSection.sendKeys(txtFilePath);
       BrowserUtils.sleep(5);
+
    }
 
 }

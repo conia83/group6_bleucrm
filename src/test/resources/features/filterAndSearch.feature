@@ -25,6 +25,7 @@ Feature: "Filter and search" functionality
     When I click filter and search input box
     And I click date dropdown menu
     Then I should be able to see selected date on menu
+
   @LUE-1054  @smoke
   Scenario: US09-4 I should be able to search by selecting single or multiple types
     When I click filter and search input box

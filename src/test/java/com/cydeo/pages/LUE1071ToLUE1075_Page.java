@@ -9,6 +9,7 @@ public class LUE1071ToLUE1075_Page {
 
    public LUE1071ToLUE1075_Page() {
       PageFactory.initElements(Driver.getDriver(), this);
+
    }
 
    @FindBy(xpath = "//*[@id=\"bx-b-uploadfile-blogPostForm\"]")

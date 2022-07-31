@@ -17,7 +17,6 @@ public class LUE1076_StepDefinitions {
 
       lue1076Page.textSection.sendKeys(pdfFilePath);
       BrowserUtils.sleep(3);
-
    }
 
    @When("user inserts a image to text section")

@@ -17,4 +17,5 @@ public class LUE1078_Page {
    @FindBy(xpath = "//*[@id=\"diskuf-edit-rigths-doc\"]")
    public WebElement recipientEditCheckbox;
 
+
 }

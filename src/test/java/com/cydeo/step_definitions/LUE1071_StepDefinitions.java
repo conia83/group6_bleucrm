@@ -65,5 +65,4 @@ public class LUE1071_StepDefinitions {
       BrowserUtils.waitFor(5);
 
    }
-
 }

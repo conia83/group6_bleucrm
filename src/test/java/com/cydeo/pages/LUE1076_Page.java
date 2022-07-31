@@ -7,6 +7,7 @@ import org.openqa.selenium.support.PageFactory;
 
 public class LUE1076_Page {
 
+
    public LUE1076_Page() {
       PageFactory.initElements(Driver.getDriver(), this);
    }

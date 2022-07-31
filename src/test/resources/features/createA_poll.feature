@@ -86,7 +86,6 @@ Feature: Create a poll
         And user clicks send button
         Then user sees the error message about question "Please specify at least one question."
 
-
       Scenario: A.C.5:create a poll without writing at least two answer (mandatory field 4)
         And user send a message "hello world".
         And user clicks "Add more" button

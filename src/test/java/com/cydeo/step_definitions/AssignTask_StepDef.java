@@ -23,7 +23,6 @@ public class AssignTask_StepDef {
     int beforeCount;
     int afterCount;
 
-
     @Given("User is on the Tasks section in the azulcrm home page")
     public void user_is_on_the_blue_crm_home_page() {
 

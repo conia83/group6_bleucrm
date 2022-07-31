@@ -63,7 +63,6 @@ public class PollStepDefinition {
         BrowserUtils.sleep(1);
 
     }
-
     @Given("user seleckts a person  {string} from list")
     public void user_seleckts_a_person_from_list(String person) {
 

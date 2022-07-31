@@ -14,6 +14,7 @@ public class LUE1074_StepDefinitions {
    public void userSendsAJPGFileToUploadFilesAndImagesSection() {
       page.uploadFilesSection.sendKeys(jpgFilePath);
       BrowserUtils.sleep(3);
+
    }
 
 }

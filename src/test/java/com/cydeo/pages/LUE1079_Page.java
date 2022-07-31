@@ -16,5 +16,4 @@ public class LUE1079_Page {
 
    @FindBy(xpath = "//span[@class='del-but']")
    public WebElement secondFileRemoveButton;
-
 }

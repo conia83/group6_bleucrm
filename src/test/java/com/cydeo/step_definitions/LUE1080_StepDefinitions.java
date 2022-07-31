@@ -22,7 +22,6 @@ public class LUE1080_StepDefinitions {
 
       lue1080Page.editButton.click();
       BrowserUtils.sleep(1);
-
    }
 
    @When("user enters a custom name for the file")

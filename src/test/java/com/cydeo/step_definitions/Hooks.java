@@ -33,4 +33,5 @@ public class Hooks {
         }
 
        Driver.closeDriver();
-    }}
+    }
+}

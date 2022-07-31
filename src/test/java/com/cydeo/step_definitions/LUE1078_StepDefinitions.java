@@ -13,6 +13,7 @@ public class LUE1078_StepDefinitions {
    public void allowARecipientToEditDocumentsCheckboxIsSelected() {
       Assert.assertEquals(lue1078Page.recipientEditText.getText(), "Allow a recipient to edit documents?");
       lue1078Page.recipientEditCheckbox.isSelected();
+
    }
 
 }

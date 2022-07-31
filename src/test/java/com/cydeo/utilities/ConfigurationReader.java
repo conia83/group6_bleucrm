@@ -18,7 +18,6 @@ public class ConfigurationReader {
 
             //3- Load the properties object using FileInputStream object
             properties.load(file);
-
             //close the file
             file.close();
 

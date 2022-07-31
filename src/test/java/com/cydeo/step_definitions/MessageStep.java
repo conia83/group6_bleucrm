@@ -21,10 +21,6 @@ public class MessageStep {
     DashboardMessage dashboardMessage = new DashboardMessage();
 
 
-
-
-    /////////////// background
-
     @Given("user is on the login page, login, clicks on Message tab")
     public void user_is_on_the_login_page_login_clicks_on_message_tab_or_send_message_input_box() {
 

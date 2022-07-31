@@ -57,8 +57,6 @@ public class DashboardMessage {
     public WebElement deleteRecipients;
 
 
-
-
     @FindBy(xpath = "//*[@class='feed-add-post-destination-new']")
     public WebElement toAllEmployees;
 

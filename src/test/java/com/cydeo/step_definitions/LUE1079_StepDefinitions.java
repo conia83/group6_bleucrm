@@ -17,7 +17,6 @@ public class LUE1079_StepDefinitions {
 
       lue1079Page.secondFileRemoveButton.click();
       BrowserUtils.sleep(1);
-
    }
 
    @Then("removed files and images are not seen")

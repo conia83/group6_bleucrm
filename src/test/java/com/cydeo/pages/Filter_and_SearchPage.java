@@ -55,5 +55,4 @@ public class Filter_and_SearchPage {
     @FindBy(xpath = "//div[.='Appreciations']")
     public WebElement typeAppreciation;
 
-
 }

@@ -20,5 +20,4 @@ public class LUE1080_Page {
    @FindBy(xpath = "//span[@class='f-wrap']")
    public WebElement fileName;
 
-
 }

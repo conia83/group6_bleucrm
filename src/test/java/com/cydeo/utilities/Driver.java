@@ -110,7 +110,6 @@ public class Driver {
                     break;
 
             }
-
         }
 
         return driverPool.get();

@@ -28,6 +28,7 @@ public class LoginPage {
         password.sendKeys(ConfigurationReader.getProperty("password"));
         loginButton.click();
         BrowserUtils.waitForPageToLoad(5);
+
     }
 
 }

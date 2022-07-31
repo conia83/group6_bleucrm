@@ -299,7 +299,6 @@ for given duration
 
     /**
      * Waits for element to be not stale
-     *
      * @param element
      */
     public static void waitForStaleElement(WebElement element) {
