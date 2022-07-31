@@ -25,7 +25,7 @@ Feature: "Filter and search" functionality
     When I click filter and search input box
     And I click date dropdown menu
     Then I should be able to see selected date on menu
-  @LUE-1054
+  @LUE-1054  @smoke
   Scenario: US09-4 I should be able to search by selecting single or multiple types
     When I click filter and search input box
     And I click type dropdown and check multiple types
@@ -43,7 +43,8 @@ Feature: "Filter and search" functionality
     When I click filter and search input box
     And I click Restore default fields button
     Then I should see filters as default type
-  @LUE-1057
+
+  @LUE-1057 @smoke
   Scenario: US09-7 I should be able to reset filters to default.
     When I click filter and search input box
     And I click type dropdown and check multiple types
