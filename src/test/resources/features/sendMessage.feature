@@ -34,7 +34,7 @@ Feature: Send message
 
 
 
-  @LUE-1039
+  @LUE-1039  @smoke
   Scenario: 01-01-02: send a message without the message title and the message text
     And user clicks the SEND button
     Then user should see the error message "The message title is not specified"
@@ -80,7 +80,7 @@ Feature: Send message
 
 
 
-  @LUE-1044
+  @LUE-1044  @smoke
   Scenario: 01-03: cancel sending messages at any time before sending
    # And user writes a message title "test" on the Topic field
     And user writes a message "test" on the message text field

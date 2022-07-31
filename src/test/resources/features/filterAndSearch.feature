@@ -4,7 +4,7 @@ Feature: "Filter and search" functionality
   Background: user is on the homepage
     Given as a user I am on the BleuCRM homepage
 
-@LUE-1050
+@LUE-1050 @smoke
   Scenario: US09-1 As a user I should be able to see default filters as "my activity, work, favorite, announcements, and workflows"
     When I click filter and search input box
     Then I should see following as default filters

@@ -18,7 +18,7 @@ Feature: Create a poll
   Background: user on the dashboard and click poll tap
     Given user is on the login page, login, clicks on Poll tab
 
-
+  @smoke
     Scenario:A.C.1:add users by selecting multiple contacts from Employees and Department's contact lists.
       And user sees the specifying "All employees" by default
       And user clicks "Add more" button
@@ -75,7 +75,7 @@ Feature: Create a poll
         And user clicks send button
         Then user sees the person error message "Please specify at least one person."
 
-
+  @smoke
       Scenario: A.C.5_3:create a poll without writing at least one question (mandatory field 3)
         And user send a message "hello world".
         And user clicks "Add more" button
