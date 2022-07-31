@@ -29,4 +29,5 @@ public class LoginPage {
         loginButton.click();
         BrowserUtils.waitForPageToLoad(5);
     }
+
 }

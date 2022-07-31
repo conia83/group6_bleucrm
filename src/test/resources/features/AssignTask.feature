@@ -1,4 +1,4 @@
-@EnesWip
+
 Feature: Task assignment function
   As a user, I should be able to assign tasks under Quick Navigate Menu.
 
@@ -23,7 +23,7 @@ Scenario: Assigning tasks
     And user select another user
     And user clicks on send button
     Then user should see all the responsible person
-
+  @smoke
     Scenario: When task(s) is(are) created, they can be seen on the count on the homepage under "MY TASKS" table
       When user types a task name on the Things to do section
       And user click on send button
