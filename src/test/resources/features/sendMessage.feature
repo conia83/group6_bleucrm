@@ -80,7 +80,7 @@ Feature: Send message
 
 
 
-  @LUE-1044  @smoke
+  @LUE-1044
   Scenario: 01-03: cancel sending messages at any time before sending
    # And user writes a message title "test" on the Topic field
     And user writes a message "test" on the message text field

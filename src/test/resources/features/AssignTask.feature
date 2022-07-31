@@ -5,7 +5,7 @@ Feature: Task assignment function
   Background:
   Given User is on the Tasks section in the azulcrm home page
 
-  @smoke
+
 Scenario: Assigning tasks
   When user types a task name on the Things to do section
   And user clicks on Add more button of Responsible person section
@@ -23,7 +23,7 @@ Scenario: Assigning tasks
     And user select another user
     And user clicks on send button
     Then user should see all the responsible person
-
+  @smoke
     Scenario: When task(s) is(are) created, they can be seen on the count on the homepage under "MY TASKS" table
       When user types a task name on the Things to do section
       And user click on send button

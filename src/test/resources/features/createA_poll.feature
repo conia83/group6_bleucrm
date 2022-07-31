@@ -65,7 +65,7 @@ Feature: Create a poll
         And user clicks send button
         Then user sees the "The message title is not specified"
 
-
+  @smoke
        Scenario: A.C.5.2:create a poll without selecting person (mandatory field 2)
         And user send a message "hello world".
         And user delete all person at To box.
@@ -75,7 +75,7 @@ Feature: Create a poll
         And user clicks send button
         Then user sees the person error message "Please specify at least one person."
 
-  @smoke
+
       Scenario: A.C.5_3:create a poll without writing at least one question (mandatory field 3)
         And user send a message "hello world".
         And user clicks "Add more" button
