@@ -10,6 +10,7 @@ Feature: Create a poll
   4. User should be able to provide multiple choice to attendees by selecting the Allow multiple choice checkbox.
   5. User should be able to create a poll with mandatory fields.
 
+
   Mandatory fields: Message title, recipient, 1 question, 2 answers -
   Error message: "The message title is not specified"
   Error message: "Please specify at least one person."
