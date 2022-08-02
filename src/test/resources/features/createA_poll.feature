@@ -20,7 +20,10 @@ Feature: Create a poll
   Background: user on the dashboard and click poll tap
     Given user is on the login page, login, clicks on Poll tab
 
+
   @LUE-1060
+  @smoke
+
     Scenario:A.C.1:add users by selecting multiple contacts from Employees and Department's contact lists.
       And user sees the specifying "All employees" by default
       And user clicks "Add more" button
@@ -67,7 +70,10 @@ Feature: Create a poll
         And user clicks send button
         Then user sees the "The message title is not specified"
 
+
   @LUE-1066
+  @smoke
+
        Scenario: A.C.5.2:create a poll without selecting person (mandatory field 2)
         And user send a message "hello world".
         And user delete all person at To box.
@@ -98,14 +104,6 @@ Feature: Create a poll
         And user specifies at list one question "Something".
         And user clicks send button
         Then user sees the error message about answer "Please specify at least two answers."
-
-
-
-
-
-
-
-
 
 
 

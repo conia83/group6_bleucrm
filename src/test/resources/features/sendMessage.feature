@@ -21,7 +21,7 @@ Feature: Send message
 
 
 
-  Background: user on the dashboard and click TASK tap
+  Background: user on the dashboard and click Message tap
     Given user is on the login page, login, clicks on Message tab
 
   @LUE-1038
@@ -34,7 +34,7 @@ Feature: Send message
 
 
 
-  @LUE-1039
+  @LUE-1039  @smoke
   Scenario: 01-01-02: send a message without the message title and the message text
     And user clicks the SEND button
     Then user should see the error message "The message title is not specified"
@@ -57,18 +57,18 @@ Feature: Send message
   @LUE-1043
   Scenario: 01-02: The message delivery should be to 'All employees' by default and should be changeable.
     # And user writes a message title "test" on the Topic field
-    # And user writes a message "test" on the message text field
-    # And user clicks the SEND button
+    And user writes a message "test" on the message text field
+    And user clicks the SEND button
     And user sees the message created to "To all employees" by default
     And user clicks More button in the created message
     And user clicks Edit button
     And user clicks Add more button
-    And user clicks a person "helpdesk25@cybertekschool.com"
+    And user clicks a person "email"
     And user clicks the Employees and departments tab
-    And user clicks a person "hr76@cybertekschool.com" from the people list
+    And user clicks a person "email" from the people list
     And user clicks the E-mail users tap
-    And user texts a email "helpdesk22@cybertekschool.com"
-    And user clicks the person "helpdesk22@cybertekschool.com" from the people list
+    And user texts a email "email"
+    And user clicks the person "email" from the people list
     And user clicks the SEND button
     Then user should see the recipients has changed
 
