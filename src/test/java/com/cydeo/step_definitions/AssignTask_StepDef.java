@@ -22,6 +22,7 @@ public class AssignTask_StepDef {
     String email;
     int beforeCount;
     int afterCount;
+    String expectedCheklistTitle;
 
 
     @Given("User is on the Tasks section in the azulcrm home page")
@@ -143,6 +144,78 @@ public class AssignTask_StepDef {
 
         Assert.assertNotEquals(beforeCount, afterCount);
 
+
+    }
+
+
+    @When("user clicks on checklist button")
+    public void user_clicks_on_checklist_button() {
+        assignTask_pages.Checklist1.click();
+    }
+    @When("user types something inside the input box of checklist")
+    public void user_types_something_inside_the_input_box_of_checklist() {
+         assignTask_pages.ChecklistInputBox.sendKeys("checklist");
+
+
+
+    }
+    @When("user clicks on checkmark button")
+    public void user_clicks_on_checkmark_button() {
+        assignTask_pages.checkmark.click();
+
+    }
+    @Then("user should see added the text on the checklist")
+    public void user_should_see_added_the_text_on_the_checklist() {
+        Driver.getDriver().navigate().refresh();
+        assignTask_pages.WebTable.click();
+        Driver.getDriver().switchTo().frame(assignTask_pages.IframeWebtable);
+       Assert.assertTrue(assignTask_pages.checkBox.isDisplayed());
+       Driver.getDriver().switchTo().parentFrame();
+
+    }
+
+    @When("user clicks on date input box of Deadline")
+    public void user_clicks_on_date_input_box_of_deadline() {
+        assignTask_pages.deadlineClick.click();
+    }
+    @When("user clicks on month selection")
+    public void user_clicks_on_month_selection() {
+        assignTask_pages.deadlineMonthTitle.click();
+
+    }
+    @When("user selects a month")
+    public void user_selects_a_month() {
+        assignTask_pages.deadlineMont.click();
+    }
+    @When("user clicks on year selection")
+    public void user_clicks_on_year_selection() {
+        assignTask_pages.deadlineYearTitle.click();
+
+
+    }
+    @When("user selects a year")
+    public void user_selects_a_year() {
+        assignTask_pages.deadlineYear.click();
+    }
+    @When("user selects on a day")
+    public void user_selects_on_a_day() {
+        assignTask_pages.deadlineDay.click();
+
+    }
+    @When("user clicks Select button")
+    public void user_clicks_select_button() {
+        assignTask_pages.deadlineSelectButton.click();
+        assignTask_pages.addTaskButton.click();
+    }
+    @Then("user should see given date on the deadline section")
+    public void user_should_see_the_date_in_order_of_month_day_year_time_am_or_pm_on_deadline_input_box() {
+        Driver.getDriver().navigate().refresh();
+        assignTask_pages.WebTable.click();
+        Driver.getDriver().switchTo().frame(assignTask_pages.IframeWebtable);
+
+        String actualDeadlineText = Driver.getDriver().findElement(By.xpath("//span[@id='task-detail-deadline']")).getText();
+        String expectedDeadlineText="10/21/2023 07:00 pm";
+        Assert.assertEquals(actualDeadlineText,expectedDeadlineText);
 
     }
 }

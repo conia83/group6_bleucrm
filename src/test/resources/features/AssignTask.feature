@@ -30,3 +30,23 @@ Scenario: Assigning tasks
       Then user should see that the number in the count on the home page under the MY TASKS table.
 
 
+      Scenario: User should be able to add checklist
+      When user types a task name on the Things to do section
+      When user clicks on checklist button
+      And user types something inside the input box of checklist
+      And user clicks on checkmark button
+      And user click on send button
+      Then user should see added the text on the checklist
+
+
+
+  Scenario: Adding deadline in the task
+    When user types a task name on the Things to do section
+    And user clicks on date input box of Deadline
+    And user clicks on month selection
+    And user selects a month
+    And user clicks on year selection
+    And user selects a year
+    And user selects on a day
+    And user clicks Select button
+    Then user should see given date on the deadline section

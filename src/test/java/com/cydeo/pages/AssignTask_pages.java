@@ -81,7 +81,41 @@ public class AssignTask_pages {
     @FindBy(xpath = "//table[@class='main-grid-panel-table']//tr/td[2]//span[2]")
     public WebElement count1;
 
+    @FindBy(xpath = "//span[@class='tasks-task-mpf-link']")
+    public WebElement Checklist1;
 
+    @FindBy(xpath = "//span[@class='task-checklist-form-vpadding']/input")
+    public WebElement ChecklistInputBox;
+
+    @FindBy(xpath ="(//label[@class='block-read task-checklist-field-label']//span)[3]")
+    public WebElement ChecklistGetText;
+
+    @FindBy(xpath = "//span[@class='js-id-checklist-is-form-submit block-edit tasks-btn-apply task-field-title-ok']")
+    public WebElement checkmark;
+
+    @FindBy(xpath = "//input[contains(@id,'chl_item')]")
+    public WebElement checkBox;
+
+    @FindBy(xpath = "//a[@class='bx-calendar-top-month']")
+    public WebElement deadlineMonthTitle;
+
+    @FindBy(xpath = "//span[@data-bx-month='9']")
+    public WebElement deadlineMont;
+
+    @FindBy(xpath = "//a[@class='bx-calendar-top-year']")
+    public WebElement deadlineYearTitle;
+
+    @FindBy(xpath = "//span[@data-bx-year='2023']")
+    public WebElement deadlineYear;
+
+    @FindBy(xpath = "//div[@class='bx-calendar-range']/a[@data-date='1697846400000']")
+    public WebElement deadlineDay;
+
+    @FindBy(xpath = "//div[@class='bx-calendar-button-block']/a[1]")
+    public WebElement deadlineSelectButton;
+
+    @FindBy(xpath = "//span[@data-bx-id='dateplanmanager-deadline']//input[@data-bx-id='datepicker-display']")
+    public WebElement deadlineClick;
 
 
 }
