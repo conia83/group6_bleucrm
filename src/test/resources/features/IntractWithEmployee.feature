@@ -1,6 +1,6 @@
 @wip
-Feature: As a user, I should be able to interact with employees on the posts.
-User Story: As a user, I should be able to interact with employees on the posts.
+Feature: As a user, I should be able to interact with employees on the posts
+User Story: As a user, I should be able to interact with employees on the posts
 
   @1
 Scenario: User should be able to make a comment, like, or unfollow other employees' posts.
